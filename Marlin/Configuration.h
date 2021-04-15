@@ -992,9 +992,8 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-// Using https://www.thingiverse.com/thing:3716043 Waggster Mod BLTouch Artillery sidewinder X1
 // NOTE : Z value may change depending on the bltouch height mount.
-#define NOZZLE_TO_PROBE_OFFSET { 0, 28, -1.88 }
+#define NOZZLE_TO_PROBE_OFFSET { 0, 28, -2.1 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
