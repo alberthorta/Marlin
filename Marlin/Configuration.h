@@ -500,9 +500,9 @@
     #define DEFAULT_Kd_LIST { 87.47, 87.47 }
   #else
     // Default Artillery X1 Hemera Hotend settings
-    #define DEFAULT_Kp 25.88
-    #define DEFAULT_Ki 1.91
-    #define DEFAULT_Kd 87.47
+    #define DEFAULT_Kp 25.70
+    #define DEFAULT_Ki 1.78
+    #define DEFAULT_Kd 92.56
   #endif
 #endif // PIDTEMP
 
@@ -1093,14 +1093,14 @@
 // @section machine
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
-#define INVERT_X_DIR false
-#define INVERT_Y_DIR false
-#define INVERT_Z_DIR true
+#define INVERT_X_DIR true
+#define INVERT_Y_DIR true
+#define INVERT_Z_DIR false
 
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -1178,7 +1178,7 @@
  */
 #define FILAMENT_RUNOUT_SENSOR
 #if ENABLED(FILAMENT_RUNOUT_SENSOR)
-  #define FIL_RUNOUT_PIN 2                // Will be using X-MAX pin for the runout sensor
+  #define FIL_RUNOUT_PIN P1_28                // Will be using X-MAX pin for the runout sensor
   #define FIL_RUNOUT_ENABLED_DEFAULT true // Enable the sensor on startup. Override with M412 followed by M500.
   #define NUM_RUNOUT_SENSORS   1          // Number of sensors, up to one per extruder. Define a FIL_RUNOUT#_PIN for each.
   #define FIL_RUNOUT_STATE     LOW        // Pin state indicating that filament is NOT present.
@@ -1789,7 +1789,7 @@
 //
 //  Set this option if CLOCKWISE causes values to DECREASE
 //
-//#define REVERSE_ENCODER_DIRECTION
+#define REVERSE_ENCODER_DIRECTION
 
 //
 // This option reverses the encoder direction for navigating LCD menus.
