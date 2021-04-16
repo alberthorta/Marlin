@@ -993,7 +993,7 @@
  *     O-- FRONT --+
  */
 // NOTE : Z value may change depending on the bltouch height mount.
-#define NOZZLE_TO_PROBE_OFFSET { 0, 28, -2.00 }
+#define NOZZLE_TO_PROBE_OFFSET { 0, 28, -2.05 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
